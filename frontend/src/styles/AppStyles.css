@@ -1,0 +1,108 @@
+/* General layout */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f9fb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  /* Headings */
+  h1, h2, h3 {
+    color: #4B6CB7;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  input, textarea {
+    padding: 0.75rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #4B6CB7;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3551a2;
+  }
+  
+  /* Entry list styles */
+  .entry-card {
+    background-color: white;
+    border-left: 6px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  .entry-card.mood-Happy {
+    border-left-color: #4caf50;
+  }
+  
+  .entry-card.mood-Sad {
+    border-left-color: #f44336;
+  }
+  
+  .entry-card.mood-Neutral {
+    border-left-color: #ffc107;
+  }
+  
+  .entry-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .password-input-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .password-input-container input {
+    width: 100%;
+    padding-right: 2.5rem; /* space for the eye icon */
+  }
+  
+  .password-toggle-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .password-toggle-icon.active {
+    color: #4B6CB7;
+    transform: translateY(-50%) scale(1.2);
+  }
+  
+  
+  
